@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoriTour - Korea's Premier Travel Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plane"></i>
+                <span>KoriTour</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover the Beauty of Korea</h1>
+            <p>Special travel experiences with professional guides</p>
+            <div class="hero-buttons">
+                <a href="#packages" class="btn btn-primary">Browse Packages</a>
+                <a href="#contact" class="btn btn-secondary">Inquire Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <div class="card-content">
+                    <h3>Special Discount</h3>
+                    <p>20% off your first trip</p>
+                    <span class="discount">20% OFF</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 인기 여행지 섹션 -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Welcome</p>
+            </div>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="제주도">
+                        <div class="card-overlay">
+                            <span class="price">₩299,000부터</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jeju Island</h3>
+                        <p>A beautiful island where nature and culture coexist</p>
+                        <div class="card-features">
+                            <span><i class="fas fa-clock"></i> 3N 4D</span>
+                            <span><i class="fas fa-users"></i> 2-8 people</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="부산">
+                        <div class="card-overlay">
+                            <span class="price">₩199,000부터</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Busan</h3>
+                        <p>A vibrant port city where the sea meets the city</p>
+                        <div class="card-features">
+                            <span><i class="fas fa-clock"></i> 2N 3D</span>
+                            <span><i class="fas fa-users"></i> 2-6 people</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="경주">
+                        <div class="card-overlay">
+                            <span class="price">₩159,000부터</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Gyeongju</h3>
+                        <p>Experience the essence of Silla culture in this ancient capital</p>
+                        <div class="card-features">
+                            <span><i class="fas fa-clock"></i> 2N 3D</span>
+                            <span><i class="fas fa-users"></i> 2-4 people</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 패키지 상품 섹션 -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recommended Packages</h2>
+                <p>We provide customized travel packages tailored to your preferences</p>
+            </div>
+            <div class="package-tabs">
+                <button class="tab-btn active" data-tab="popular">Popular</button>
+                <button class="tab-btn" data-tab="culture">Culture</button>
+                <button class="tab-btn" data-tab="nature">Nature</button>
+                <button class="tab-btn" data-tab="food">Food</button>
+            </div>
+            
+            <div class="package-content active" id="popular">
+                <div class="package-grid">
+                    <div class="package-card featured">
+                        <div class="package-badge">BEST</div>
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="제주도 패키지">
+                        </div>
+                        <div class="package-info">
+                            <h3>Perfect Jeju Island Tour</h3>
+                            <p class="package-desc">Experience everything Jeju has to offer: Hallasan, Seongsan Sunrise Peak, Manjanggul Cave</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 4N 5D</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Jeju Island</span>
+                                <span><i class="fas fa-star"></i> 4.9 (128 people)</span>
+                            </div>
+                            <div class="package-price">
+                                <span class="original-price">₩599,000</span>
+                                <span class="current-price">₩479,000</span>
+                                <span class="discount-tag">20% OFF</span>
+                            </div>
+                            <a href="#contact" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="부산 패키지">
+                        </div>
+                        <div class="package-info">
+                            <h3>Busan Marine City Exploration</h3>
+                            <p class="package-desc">Explore Busan's famous attractions: Haeundae, Gwangan Bridge, Taejongdae</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 3N 4D</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Busan City</span>
+                                <span><i class="fas fa-star"></i> 4.8 (95 people)</span>
+                            </div>
+                            <div class="package-price">
+                                <span class="current-price">₩299,000</span>
+                            </div>
+                            <a href="#contact" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 통계 섹션 -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">Satisfied Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Destinations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 고객 후기 섹션 -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Reviews</h2>
+                <p>Hear real travel experiences from actual travelers</p>
+            </div>
+            <div class="review-slider">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Thanks to KoriTour, I was able to perfectly explore Jeju Island. The guide was friendly and the itinerary was well-organized. I was really satisfied!"</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50" alt="Kim Mi-young">
+                        <div>
+                            <h4>Kim Mi-young</h4>
+                            <span>Jeju Island Package</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"It was my first time traveling to Busan, but thanks to KoriTour's detailed guidance, I was able to travel easily even alone. I want to use their services again!"</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50" alt="Park Jun-ho">
+                        <div>
+                            <h4>Park Jun-ho</h4>
+                            <span>Busan Package</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연락처 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Us Now</h2>
+                    <p>Our professional consultants will suggest the best travel options for you</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone Inquiry</h4>
+                                <p>1588-1234</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@koritour.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Weekdays 09:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Package of Interest</option>
+                                <option value="jeju">Jeju Island Package</option>
+                                <option value="busan">Busan Package</option>
+                                <option value="gyeongju">Gyeongju Package</option>
+                                <option value="custom">Custom Travel</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Please enter your inquiry" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-plane"></i>
+                        <span>KoriTour</span>
+                    </div>
+                    <p>Korea's Premier Travel Guide Service</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Teheran-ro, Gangnam-gu, Seoul</p>
+                    <p>1588-1234</p>
+                    <p>info@koritour.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KoriTour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
