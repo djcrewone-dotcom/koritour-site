@@ -19,6 +19,8 @@ A modern and responsive website introducing Korea's beautiful travel destination
 - Scroll-based animations
 - Hover effects and micro-interactions
 - Real-time form validation
+- User authentication system (Sign up/Login)
+- Google OAuth integration
 
 ## 🏗️ Project Structure
 
@@ -27,6 +29,10 @@ KoriTour/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS stylesheet
 ├── script.js           # JavaScript functionality
+├── signup.html         # User registration page
+├── signup.js           # Signup functionality
+├── login.html          # User login page
+├── login.js            # Login functionality
 └── README.md           # Project documentation
 ```
 
